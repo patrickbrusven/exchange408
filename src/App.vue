@@ -1,30 +1,81 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div class="container">
+    <Navigation />
+    <router-view/>
   </div>
-  <router-view/>
 </template>
 
+<script>
+import Navigation from './components/Navigation.vue'
+
+export default {
+  components: {
+    Navigation,
+  }
+}
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+@font-face {
+  font-family: 'Kollektif';
+  src: url('./assets/Kollektif.ttf') format('truetype');
+  font-display: swap;
 }
 
-#nav {
-  padding: 30px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Kollektif', Helvetica, Tahoma, sans-serif;
+  font-weight: 300;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+body {
+  background-color: #f0f0ec;
+  color: #4a4a4a;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: #4a4a4a;
+}
+
+li {
+  list-style: none;
+}
+
+.largeText {
+  font-size: 18px;
+}
+
+.mediumText {
+  font-size: 13px;
+}
+
+.smallText {
+  font-size: 12px;
+}
+
+p {
+  font-size: 12px;
+}
+
+@media (min-width: 350px) {
+  .largeText {
+    font-size: 26px;
+  }
+
+  .mediumText {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 14px;
+  }
 }
 </style>
