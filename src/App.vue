@@ -1,16 +1,21 @@
 <template>
-  <div class="container">
+  <div class="appContainer">
     <Navigation />
-    <router-view/>
+    <div class="routerView">
+      <router-view />
+    </div>
+    <FooterComponent />
   </div>
 </template>
 
 <script>
 import Navigation from './components/Navigation.vue'
+import FooterComponent from './components/FooterComponent.vue'
 
 export default {
   components: {
     Navigation,
+    FooterComponent,
   }
 }
 </script>
@@ -35,9 +40,16 @@ body {
   color: #4a4a4a;
 }
 
-.container {
+.appContainer {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+}
+
+footer {
+  margin-top: auto;
+  width: 100vw;
 }
 
 a {

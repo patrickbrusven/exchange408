@@ -50,6 +50,6 @@ export default {
 .container {
   display: grid;
   place-items: center;
-  width: 90vw;
+  width: 90%;
 }
 </style>

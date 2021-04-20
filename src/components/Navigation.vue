@@ -13,6 +13,9 @@
         <li>
           <router-link to="/menu">Menu</router-link>
         </li>
+        <li>
+          <router-link to="/OrderOnline">Order Online</router-link>
+        </li>
       </ul>
       <div @click='onClick' class="navBurger">
         <div class="line1"></div>
@@ -63,7 +66,7 @@ export default {
   Navigation
 ==================================== */
 .banner {
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100vw;
   background-color: #d8c9a6;
@@ -76,7 +79,7 @@ export default {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: max-content;
+  height: min-content;
   background-color: #d8c9a6;
 }
 
@@ -126,7 +129,7 @@ export default {
 
 .nav-active {
   opacity: 1;
-  transform: translateY(144%);
+  transform: translateY(125%);
   transition: opacity .45s ease-in;
 }
 
@@ -156,7 +159,7 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 25%;
+    width: 35%;
     bottom: 0;
     margin-top: 0px;
     opacity: 1;

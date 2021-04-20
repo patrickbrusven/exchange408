@@ -2,27 +2,47 @@
   <div class="landingPage">
     <LandingPage />
   </div>
+  <SectionBreak />
+  <CarouselComponent />
+  <sectionBreak />
+  <LocationComponent />
+
 </template>
 
 <script>
 // @ is an alias to /src
-import LandingPage from '@/components/LandingPage.vue'
+import LandingPage from '@/components/homeComponents/LandingPage.vue'
+import LocationComponent from '@/components/homeComponents/LocationComponent.vue'
+import CarouselComponent from '@/components/homeComponents/CarComponent.vue'
+import SectionBreak from '@/components/assetComponents/SectionBreak.vue'
 
 export default {
   name: 'Home',
   components: {
-    LandingPage
+    LandingPage,
+    CarouselComponent,
+    LocationComponent,
+    SectionBreak,
   }
 }
 </script>
 
-<style scoped>
+<style>
 
 .landingPage {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 92vh;
+  align-items: center;
+  height: 100vh;
+}
+
+.landingPage .tavernName {
+  font-size: 30px;
+}
+
+.landingPage .tavern {
+  font-size: 27px;
 }
 
 </style>

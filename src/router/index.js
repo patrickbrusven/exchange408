@@ -18,11 +18,15 @@ const routes = [
   {
     path: '/menu',
     name: 'Menu',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Menu.vue')
-  }
+    component: () => import('../views/Menu.vue')
+  },
+  {
+    path: '/orderonline',
+    name: 'OrderOnline',
+    component: () => import('../views/OrderOnline.vue')
+  },
+
+
 ]
 
 const router = createRouter({
