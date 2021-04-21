@@ -23,14 +23,20 @@
         <div class="line3"></div>
       </div>
     </nav>
-    <div id="message" class="messageWrapper mediumText"></div>
+    <SpecialMessage />
   </div>
 
 </template>
 
 <script>
+import SpecialMessage from '@/components/SpecialMessage.vue'
+
 export default {
   name: 'Navigation',
+
+  components: {
+    SpecialMessage,
+  },
 
   methods: {
 
@@ -186,25 +192,4 @@ export default {
   }
 }
 
-/* =================================
-  countdown
-==================================== */
-
-.messageWrapper {
-  width: 100vw;
-  height: min-content;
-  background-color: grey;
-}
-
-.messageWrapper p {
-  color: #f0f0ec;
-  padding: 10px;
-}
-
-@media screen and (min-width:900px){
-  .messageWrapper p {
-    width: 900px;
-    margin: auto;
-  }
-}
 </style>
