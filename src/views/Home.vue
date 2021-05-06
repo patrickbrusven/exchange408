@@ -6,11 +6,9 @@
   <CarouselComponent />
   <sectionBreak />
   <LocationComponent />
-
 </template>
 
 <script>
-// @ is an alias to /src
 import LandingPage from '@/components/homeComponents/LandingPage.vue'
 import LocationComponent from '@/components/homeComponents/LocationComponent.vue'
 import CarouselComponent from '@/components/homeComponents/CarComponent.vue'
@@ -35,6 +33,8 @@ export default {
   justify-content: center;
   align-items: center;
   height: 100vh;
+
+  overflow-x: hidden;
 }
 
 .landingPage .tavernName {

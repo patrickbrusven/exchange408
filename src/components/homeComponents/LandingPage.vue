@@ -43,7 +43,6 @@ export default {
   left: 6px;
   width: 132%;
   max-width: 750px;
-  overflow: hidden;
   /* filter: drop-shadow(-6px 0px 4px rgba(97, 97, 97, .9)); */
   filter: drop-shadow(-6px 0px 6px rgba(240, 240, 236, 1));
 }
