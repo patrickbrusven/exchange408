@@ -8,17 +8,11 @@
     <img class="backgroundImage" src="@/assets/logoOnBrickMed.jpg" alt="side of restaurant building brick facade"/>
   </picture>
   <img class="landingPageLogo" src="@/assets/408LogoLightBG.svg" alt="main logo" width="500" height="500">
-  <!-- <LogoComponent class="landingPageLogo" theme="inherit" /> -->
 </template>
 
 <script>
-// import LogoComponent from '../assetComponents/LogoComponent.vue'
-
 export default {
   name: 'LandingPage',
-  components: {
-    // LogoComponent,
-  }
 }
 </script>
 
@@ -45,8 +39,12 @@ export default {
 }
 
 .landingPageLogo {
-  filter: drop-shadow(-6px 0px 4px rgba(97, 97, 97, .9));
-  width: 100%;
+  position: relative;
+  left: 6px;
+  width: 132%;
   max-width: 750px;
+  overflow: hidden;
+  /* filter: drop-shadow(-6px 0px 4px rgba(97, 97, 97, .9)); */
+  filter: drop-shadow(-6px 0px 6px rgba(240, 240, 236, 1));
 }
 </style>
