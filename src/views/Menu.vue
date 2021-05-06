@@ -15,7 +15,7 @@
     <Pastas />
     <WhiteLine />
     <SidePairings />
-    <img class="darkLogo" src="@/assets/logodarkbg.svg" alt="main logo" width="200" height="100">
+    <img class="darkLogo" src="@/assets/408LogoDarkBG.svg" alt="main logo" width="200" height="100">
   </div>
 </template>
 
