@@ -1,12 +1,12 @@
 <template>
   <div class="banner">
     <nav class="mainNav">
-      <div class="logoNav">
+      <div @click='onClickLogo' class="logoNav">
         <router-link to="/">
-          <h1 class="largeText">EXCHANGE</h1>
+          <h1>EXCHANGE</h1>
         </router-link>
       </div>
-      <ul @click='onClick' class="navLinks mediumText">
+      <ul @click='onClickLogo' class="navLinks mediumText">
         <li>
           <router-link to="/about">About</router-link>
         </li>
@@ -17,7 +17,7 @@
           <router-link to="/OrderOnline">Order Online</router-link>
         </li>
       </ul>
-      <div @click='onClick' class="navBurger">
+      <div @click='onClickBurger' class="navBurger">
         <div class="line1"></div>
         <div class="line2"></div>
         <div class="line3"></div>
@@ -39,30 +39,22 @@ export default {
   },
 
   methods: {
-
-    onClick() {
+    onClickBurger() {
       const burger = document.querySelector('.navBurger');
       const nav = document.querySelector('.navLinks');
-
       nav.classList.toggle('nav-active');
       burger.classList.toggle('toggle');
     },
 
-
+    onClickLogo() {
+      const burger = document.querySelector('.navBurger');
+      const nav = document.querySelector('.navLinks');
+      if( nav.classList.contains('nav-active')) {
+        burger.classList.toggle('toggle');
+        nav.classList.toggle('nav-active');
+      }
+    },
   },
-
-  // created: function () {
-  //   window.addEventListener('resize', () => {
-  //     const burger = document.querySelector('.navBurger');
-  //     const nav = document.querySelector('.navLinks');
-  //     if(document.body.clientWidth < 767 && nav.classList.contains('nav-active')) {
-  //       return;
-  //     } else if (document.body.clientWidth < 767) {
-  //       burger.classList.remove('toggle');
-  //     }
-  //   })
-  // },
-
 }
 
 </script>
@@ -92,9 +84,13 @@ export default {
 .logoNav {
   position: relative;
   letter-spacing: 7px;
-  padding-top: 5px;
+  padding-top: 8px;
   padding-bottom: 5px;
   z-index: 101;
+}
+
+h1 {
+  font-size: 26px;
 }
 
 .navLinks {
