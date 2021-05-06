@@ -10,7 +10,7 @@
       <div id="map">
         <img src="@/assets/windsorMap.png" alt="screenshot of google maps image with The 408 Exchange pinned"/>
       </div>
-      <img class="logo" src="@/assets/logolightbg.svg" alt="main logo" width="250" height="150">
+      <img class="logo" src="@/assets/408LogoLightBG.svg" alt="main logo" width="250" height="150">
       <!-- <LogoComponent theme="inherit" /> -->
     </div>
     <aside class="social">
