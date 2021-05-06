@@ -37,11 +37,11 @@ li {
 }
 
 .header {
-  display: grid;
-  grid-template-columns: max-content max-content max-content max-content;
-  grid-template-rows: min-content;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
 
-  grid-column: 1/3;
+  grid-column: 1/4;
   grid-row: 1/2;
 }
 
@@ -56,33 +56,19 @@ li {
   font-size: 12px;
   text-align: center;
   padding-top: 2.5px;
-  align-self: start;
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
-
-.title {
-  grid-column: 2/3;
-  grid-row: 1/2;
+  align-self: baseline;
 }
 
 .slash {
   font-size: 20px;
   margin-left: 2px;
   margin-right: 2px;
-  grid-column: 3/4;
-  grid-row: 1/2;
-}
-
-.price {
-  grid-column: 4/5;
-  grid-row: 1/2;
-  align-self: end;
 }
 
 .description {
   grid-column: 1/3;
   grid-row: 2/4;
+  padding-top: 3px;
 }
 
 .perfectPairing {
@@ -94,6 +80,7 @@ li {
   grid-column: 2/4;
   grid-row: 4/5;
   justify-self: end;
+  padding-top: 4px;
 }
 
 .pp,
