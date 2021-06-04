@@ -13,6 +13,9 @@ export default {
 
 <style scoped>
 .copyright {
+  /* position: relative;
+  bottom: 0; */
+
   background-color: #d8c9a6;
   padding: 10px;
   display: flex;

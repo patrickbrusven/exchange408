@@ -1,11 +1,11 @@
 <template>
-  <div class="landingPage">
-    <LandingPage />
-  </div>
-  <SectionBreak />
-  <CarouselComponent />
-  <sectionBreak />
-  <LocationComponent />
+    <div class="landingPage">
+      <LandingPage />
+    </div>
+    <SectionBreak />
+    <CarouselComponent />
+    <sectionBreak />
+    <LocationComponent />
 </template>
 
 <script>
@@ -25,14 +25,18 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
 .landingPage {
+  position: relative;
+  top: 0;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 85vh;
+  width: 100%;
 
   overflow-x: hidden;
 }

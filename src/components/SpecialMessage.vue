@@ -1,6 +1,7 @@
 <template>
-  <div id="message" class="messageWrapper mediumText">
+  <div v-if="message" id="message" class="messageWrapper mediumText">
     <p>{{ message }}</p>
+    <!-- <button @click="hideMessage" type="button">Hide</button> -->
   </div>
 </template>
 
@@ -15,6 +16,11 @@ export default {
   },
 
   methods: {
+    // hideMessage() {
+    //   const message = document.querySelector('#message');
+    //   message.classList.toggle('hideMessage');
+    // },
+
     getMessage() {
       var comp = this;
       var xhr = new XMLHttpRequest();
@@ -43,6 +49,11 @@ export default {
 
   height: min-content;
   background-color: grey;
+  z-index: 200;
+}
+
+.hideMessage {
+  display: none;
 }
 
 p {
@@ -50,6 +61,13 @@ p {
   max-width: 900px;
   padding: 10px;
   margin: auto;
+
+  z-index: 200;
+}
+
+button {
+  z-index: 200;
+  cursor: pointer;
 }
 
 </style>

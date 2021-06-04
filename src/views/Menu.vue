@@ -1,19 +1,19 @@
 <template>
   <div class="menu">
     <Breakfast />
-    <WhiteLine />
+    <WhiteLine class="oneColumn" />
     <FirstThings />
-    <WhiteLine />
-    <Sandwiches />
-    <WhiteLine />
+    <WhiteLine class="oneColumn" />
+    <Sandwiches class="sandwiches" />
+    <WhiteLine class="oneColumn" />
     <Salads />
-    <WhiteLine />
+    <WhiteLine class="oneColumn" />
     <Flatbreads />
-    <WhiteLine />
+    <WhiteLine class="oneColumn" />
     <Soup />
-    <WhiteLine />
+    <WhiteLine class="oneColumn" />
     <Pastas />
-    <WhiteLine />
+    <WhiteLine class="oneColumn" />
     <SidePairings />
     <img class="darkLogo" src="@/assets/408LogoDarkBG.svg" alt="main logo" width="200" height="100">
   </div>
@@ -52,10 +52,11 @@ export default {
 .menu {
   background-color: #07070f;
   color: #ced0cf;
-  padding-top: 50px;
+  padding-top: 10px;
   align-self: center;
 
   display: grid;
+  /* grid-template-columns: 1fr; */
   place-items: center;
   width: 100vw;
   max-width: 900px;
@@ -68,4 +69,23 @@ export default {
   margin: -20px;
 }
 
+@media screen and (min-width:768px) {
+  .menu {
+    grid-template-columns: 1fr 1fr;
+    align-items: self-start;
+    justify-items: center;
+  }
+
+  .sandwiches {
+    grid-column: 1/3;
+  }
+
+  .oneColumn {
+    display: none;
+  }
+
+  .darkLogo {
+    grid-column: 1/3;
+  }
+}
 </style>

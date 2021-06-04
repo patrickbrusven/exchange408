@@ -1,22 +1,47 @@
 <template>
   <div class="appContainer">
-    <Navigation />
-    <div class="routerView">
+    <SpecialMessage />
+
+    <!-- <div class="routerView"> -->
+      <Navigation />
       <router-view />
-    </div>
+      <!-- <FooterComponent /> -->
+    <!-- </div> -->
     <FooterComponent />
   </div>
+  <!-- <FooterComponent /> -->
 </template>
 
 <script>
+import SpecialMessage from './components/SpecialMessage.vue'
 import Navigation from './components/Navigation.vue'
 import FooterComponent from './components/FooterComponent.vue'
 
 export default {
   components: {
+    SpecialMessage,
     Navigation,
     FooterComponent,
-  }
+
+  },
+
+    // watch: {
+      // '$route' () {
+        // if (this.$route.path === '/') {
+          // const routerView = document.querySelector('.routerView');
+          // const appContainer = document.querySelector('.appContainer');
+          // routerView.style.position = "absolute";
+          // appContainer.style.height = "300vh";
+        // }
+        // else {
+          // const routerView = document.querySelector('.routerView');
+          // const appContainer = document.querySelector('.appContainer');
+          // routerView.style.position = "relative";
+          // appContainer.style.height = "auto";
+          // appContainer.style.min-height = "100vh";
+        // }
+      // }
+    // },
 }
 </script>
 
@@ -41,10 +66,19 @@ body {
 }
 
 .appContainer {
+  position: relative;
+  height: auto;
+
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   align-items: center;
+}
+
+.routerView {
+  /* position: relative; */
+  /* min-height: 100vh; */
+  /* top: 0; */
 }
 
 footer {

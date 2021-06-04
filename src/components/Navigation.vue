@@ -23,20 +23,13 @@
         <div class="line3"></div>
       </div>
     </nav>
-    <SpecialMessage />
   </div>
-
 </template>
 
 <script>
-import SpecialMessage from '@/components/SpecialMessage.vue'
 
 export default {
   name: 'Navigation',
-
-  components: {
-    SpecialMessage,
-  },
 
   methods: {
     onClickBurger() {
@@ -55,6 +48,7 @@ export default {
       }
     },
   },
+
 }
 
 </script>
@@ -63,13 +57,16 @@ export default {
 /* =================================
   Navigation
 ==================================== */
+
 .banner {
-  position: fixed;
+  position: sticky;
   top: 0;
+
   width: 100vw;
   background-color: #d8c9a6;
   z-index: 99;
 }
+
 
 .mainNav {
   position: relative;
@@ -110,10 +107,15 @@ h1 {
   z-index: 100;
 }
 
+.navLinks li {
+  z-index: 100;
+}
+
 .navLinks a {
   padding: 13px 28px;
   letter-spacing: 1px;
   display: block;
+  z-index: 100;
 }
 
 .navBurger {
