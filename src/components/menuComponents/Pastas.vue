@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <categorieComponent categorie="PASTAS"
+    <categorieComponent categorie="PASTA"
                       description="" />
     <listComponent v-for="item in pastas"
                   :item="item"
@@ -31,19 +31,8 @@ export default {
   created() {
     this.pastas = [
       {
-        title: 'Smoked Chicken Alfredo',
-        description: 'Smoked chicken, fettuccini, alfredo, cherry toms, red onion, mushrooms, parmesan, parsley',
-        mealPrice: 12,
-        price: '',
-        pp: 'Chardonnay',
-        gf: false,
-        vegetarian: false,
-        chefCrafted: false,
-        categorie: 'pastas',
-      },
-      {
         title: 'Grown-A$$ Mac & Cheese',
-        description: 'Baked penne, creamy cheddar, parmesan, bacon, jalapeno, onion, mushrooms',
+        description: 'Baked penne, creamy cheddar, parmesan, smoked bacon, jalapenos, onions, mushrooms',
         mealPrice: 8,
         price: '',
         pp: 'Bordeaux',
@@ -54,7 +43,7 @@ export default {
       },
       {
         title: 'Basic(ally) Mac & Cheese',
-        description: 'Smoked chicken breast, romaine, halved grapes, sliced apples, celery, bleu cheese crumbles, candied walnuts, raspberry vinaigrette',
+        description: 'Baked penne and creamy cheddar',
         mealPrice: 6,
         price: '',
         pp: 'English Brown Ale',

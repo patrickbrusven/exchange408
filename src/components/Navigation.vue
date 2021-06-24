@@ -8,14 +8,20 @@
       </div>
       <ul @click='onClickLogo' class="navLinks mediumText">
         <li>
-          <router-link to="/about">About</router-link>
-        </li>
-        <li>
           <router-link to="/menu">Menu</router-link>
         </li>
         <li>
-          <router-link to="/OrderOnline">Order Online</router-link>
+          <router-link to="/about">About</router-link>
         </li>
+        <li>
+          <router-link to="/#location">Location</router-link>
+        </li>
+        <!-- <li>
+          <router-link to="/Contact">Contact Us</router-link>
+        </li> -->
+        <!-- <li>
+          <router-link to="/OrderOnline">Order Online</router-link>
+        </li> -->
       </ul>
       <div @click='onClickBurger' class="navBurger">
         <div class="line1"></div>
@@ -133,7 +139,7 @@ h1 {
 
 .nav-active {
   opacity: 1;
-  transform: translateY(125%);
+  transform: translateY(127%);
   transition: opacity .45s ease-in;
 }
 

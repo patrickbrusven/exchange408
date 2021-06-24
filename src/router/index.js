@@ -8,6 +8,16 @@ const routes = [
     component: Home
   },
   {
+    path: '/#location',
+    name: 'Location',
+    component: Home
+  },
+  {
+    path: '/menu',
+    name: 'Menu',
+    component: () => import('../views/Menu.vue')
+  },
+  {
     path: '/about',
     name: 'About',
     // route level code-splitting
@@ -16,9 +26,9 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
-    path: '/menu',
-    name: 'Menu',
-    component: () => import('../views/Menu.vue')
+    path: '/contact',
+    name: 'Contact',
+    component: () => import('../views/Contact.vue')
   },
   {
     path: '/orderonline',
@@ -31,7 +41,19 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
+  // eslint-disable-next-line no-unused-vars
+  scrollBehavior (to, from, savedPosition) {
+    if (to.hash) {
+      return {el: to.hash,
+              top: 60,}
+    } else if (savedPosition) {
+      return savedPosition
+    } else {
+      return { top: 0 }
+    }
+  },
   routes
+
 })
 
 export default router

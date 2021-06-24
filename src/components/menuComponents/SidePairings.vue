@@ -32,7 +32,7 @@ export default {
     this.sidePairings = [
       {
         title: 'Garden Side Salad',
-        description: 'Romaine, cherry toms, red onion, cucumber, shredded mozzarella',
+        description: 'Romaine, cherry tomatoes, red onion, cucumbers, mushrooms, shredded mozzarella',
         mealPrice: 4,
         price: '',
         pp: '',
@@ -43,8 +43,19 @@ export default {
       },
       {
         title: 'Caesar Side Salad ',
-        description: 'Romaine, shredded parmesan, croutons, Caesar dressing',
+        description: '(GF upon request) Romaine, shredded parmesan, croutons, Caesar dressing',
         mealPrice: 4,
+        price: '',
+        pp: '',
+        gf: false,
+        vegetarian: false,
+        chefCrafted: false,
+        categorie: 'side pairings',
+      },
+      {
+        title: 'Organic Garden French Beans',
+        description: 'Fresh organic French green beans, steamed and finished with house crafted garlic dill butter Seasonal availability',
+        mealPrice: 3,
         price: '',
         pp: '',
         gf: true,
@@ -63,20 +74,10 @@ export default {
         chefCrafted: false,
         categorie: 'side pairings',
       },
-      {
-        title: 'Cuppa Chicken Noodle Soup',
-        description: 'Smoked chicken, fettuccini, carrot, onion, celery, chicken broth, garlic, bay, thyme, parsley, oregano',
-        mealPrice: 4,
-        price: '',
-        pp: '',
-        gf: false,
-        vegetarian: false,
-        chefCrafted: false,
-        categorie: 'side pairings',
-      },
+
       {
         title: 'Garlic & Dill Red Potatoes ',
-        description: 'Baby red potatoes, butter, garlic, dill',
+        description: 'Steamed red potatoes with house crafted garlic dill butter',
         mealPrice: 4,
         price: '',
         pp: '',
@@ -86,8 +87,8 @@ export default {
         categorie: 'side pairings',
       },
       {
-        title: 'Boulder Chips',
-        description: 'Regular, Jalapeno, Salt ‘n’ Vinegar, BBQ',
+        title: 'Metro Deli Potato Chips',
+        description: 'Regular or Jalapeno',
         mealPrice: 1.75,
         price: '',
         pp: '',
@@ -98,7 +99,7 @@ export default {
       },
       {
         title: 'Meats',
-        description: 'Smoked Chicken, Smoked Pork Shoulder, Ribeye Steak, Pork Belly',
+        description: 'We smoke all of our meat in-house for your taste buds enjoyment! Choices include Smoked Chicken, Smoked Pork Shoulder, Ribeye Steak, and Pork Belly (bacon)',
         mealPrice: 2,
         price: '',
         pp: '',

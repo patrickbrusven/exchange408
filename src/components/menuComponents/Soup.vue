@@ -32,7 +32,7 @@ export default {
     this.soups = [
       {
         title: 'Chicken Noodle',
-        description: 'Smoked chicken, pasta, carrot, onion, celery, chicken broth, garlic, bay, thyme, parsley, oregano',
+        description: 'Tender chicken, whole-egg noodles, carrots, onions, and celery in a made-from-scratch broth and full of love.',
         mealPrice: 5,
         price: '',
         pp: 'Pinot Blanc',

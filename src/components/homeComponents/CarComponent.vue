@@ -4,44 +4,72 @@
       <div class="slider">
         <div class="slide current">
           <picture class="lozad">
-            <source srcset="@/assets/wrapOption-900-637.jpg"
+            <source srcset="@/assets/carousel/patioLRG.jpg"
             media="(min-width: 900px)">
-            <source srcset="@/assets/wrapOption-650-460.jpg"
+            <source srcset="@/assets/carousel/patioMED.jpg"
             media="(min-width: 640px)">
-            <source srcset="@/assets/wrapOption-550-389.jpg">
-            <img class="slideBackgroundImage" src="@/assets/wrapOption-650-460.jpg" alt="mouth watering assortment of sandwiches with substitue of gluten free wrap on a table"/>
+            <source srcset="@/assets/carousel/patioSM.jpg">
+            <img class="slideBackgroundImage" src="@/assets/carousel/patioMED.jpg" alt="patio setting on a sunny day"/>
           </picture>
           <div class="content">
-            <h1 class="largeText">Options for any dietary restrictions</h1>
-            <p>Choice of Gluten Free Bread or Wrap for your favorite sandwich</p>
+            <!-- <h1 class="largeText">Fresh and Local</h1> -->
+            <p>Welcome to your local oasis right by the lake. Come for a handcrafted cocktail or a signature dish, stay for the local vibes and conversation with good friends.</p>
           </div>
         </div>
         <div class="slide">
           <picture class="lozad">
-            <source srcset="@/assets/peopleScene-1000-667.jpg"
+            <source srcset="@/assets/carousel/rubLRG.jpg"
             media="(min-width: 900px)">
-            <source srcset="@/assets/peopleScene-700-467.jpg"
+            <source srcset="@/assets/carousel/rubMED.jpg"
             media="(min-width: 640px)">
-            <source srcset="@/assets/peopleScene-500-333.jpg">
-            <img class="slideBackgroundImage" src="@/assets/peopleScene-700-467.jpg" alt="large party dinning at a long table eating an assortment of food"/>
+            <source srcset="@/assets/carousel/rubSM.jpg">
+            <img class="slideBackgroundImage" src="@/assets/carousel/rubMED.jpg" alt="meat sliced after being grilled with a perfect rub"/>
           </picture>
           <div class="content">
-            <h1 class="largeText">We Cater</h1>
-            <p>Let us handle your parties dietary restrictions with our diverse catering menu</p>
+            <!-- <h1 class="largeText">Fresh and Local</h1> -->
+            <p>We handcraft our signature rub, marinate and smoke our meat in-house for your tastebud’s enjoyment.</p>
           </div>
         </div>
         <div class="slide">
           <picture class="lozad">
-            <source srcset="@/assets/freshPasta-1000-1000.jpg"
+            <source srcset="@/assets/carousel/saladLRG.jpg"
             media="(min-width: 900px)">
-            <source srcset="@/assets/freshPasta-700-700.jpg"
+            <source srcset="@/assets/carousel/saladMED.jpg"
             media="(min-width: 640px)">
-            <source srcset="@/assets/freshPasta-500-500.jpg">
-            <img class="slideBackgroundImage" src="@/assets/freshPasta-700-700.jpg" alt="fresh ingredients laid out ontop of dark background"/>
+            <source srcset="@/assets/carousel/saladSM.jpg">
+            <img class="slideBackgroundImage" src="@/assets/carousel/saladMED.jpg" alt="a delicious looking salad"/>
           </picture>
           <div class="content">
-            <h1 class="largeText">Fresh and Local</h1>
-            <p>locally sourced and sustainablly raised. Exchange values farm fresh, sustainable and locally sourced ingredients</p>
+            <!-- <h1 class="largeText">Fresh and Local</h1> -->
+            <p>Honest, inventive and thoughtful dishes that are not your typical "bar food". From carefully crafted gyros and sandwiches, to wings, salads and even our made-from-scratch soup, we have food for everyone including delicious gluten free options.</p>
+          </div>
+        </div>
+        <div class="slide">
+          <picture class="lozad">
+            <source srcset="@/assets/carousel/drinkLRG.jpg"
+            media="(min-width: 900px)">
+            <source srcset="@/assets/carousel/drinkMED.jpg"
+            media="(min-width: 640px)">
+            <source srcset="@/assets/carousel/drinkSM.jpg">
+            <img class="slideBackgroundImage" src="@/assets/carousel/drinkMED.jpg" alt="artisan cocktail"/>
+          </picture>
+          <div class="content">
+            <!-- <h1 class="largeText">We Cater</h1> -->
+            <p>Enjoy our handcrafted cocktails, a glass of wine or a beer. From our twist on an Old Fashioned to a drink that takes you back to vacation at the beach.</p>
+          </div>
+        </div>
+        <div class="slide">
+          <picture class="lozad">
+            <source srcset="@/assets/carousel/breakfastBurritoLRG.jpg"
+            media="(min-width: 900px)">
+            <source srcset="@/assets/carousel/breakfastBurritoMED.jpg"
+            media="(min-width: 640px)">
+            <source srcset="@/assets/carousel/breakfastBurritoSM.jpg">
+            <img class="slideBackgroundImage" src="@/assets/carousel/breakfastBurritoMED.jpg" alt="mouth watering breakfast burrito"/>
+          </picture>
+          <div class="content">
+            <!-- <h1 class="largeText">Options for any dietary restrictions</h1> -->
+            <p>Handcrafted breakfast burritos available from 6a.m. to 9a.m. 7 days a week, through our walk-up window.</p>
           </div>
         </div>
       </div>

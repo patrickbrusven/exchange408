@@ -1,32 +1,39 @@
-<template>
+<template lang="html">
   <li>
     <div class="header">
+      <div class="wrapper">
+        <div class="leftSmallPipe"></div>
+        <h4 class="thinner">{{ item.msg }}</h4>
+        <div class="rightSmallPipe"></div>
+      </div>
       <div v-show="item.gf" class="gfIcon">GF</div>
-      <h3 class="title">{{ item.title }} ${{ item.mealPrice }}</h3>
+      <h3 class="bolder title">{{ item.title }}</h3>
+      <h3 class="bolder price">${{ item.mealPrice }}</h3>
       <div v-show="item.price" class="slash"> /</div>
-      <h4 v-show="item.price" class="price">{{ categorie }} only - ${{ item.price }}</h4>
+      <h4 v-show="item.price" class="price">Sandwich only - ${{ item.price }}</h4>
     </div>
-    <p class="description">{{ item.description }}</p>
-    <!-- <div v-show="item.pp" class="perfectPairing"> -->
-      <!-- <p class="ppLabel">Perfect Pairing</p> -->
-      <!-- <div class="pipe"></div> -->
-      <!-- <p class="pp">{{ item.pp }}</p> -->
-    <!-- </div> -->
+    <p class="thinner description">{{ item.description }}</p>
+    <div v-show="item.pp" class="perfectPairing">
+      <p class="ppLabel">Perfect Pairing</p>
+      <div class="pipe"></div>
+      <p class="pp">{{ item.pp }}</p>
+    </div>
   </li>
 </template>
 
 <script>
 export default {
-  name: 'listComponent',
+  name: 'liComponent',
 
   props: {
     item: Object,
-    categorie: String,
+    msg: String
   }
 }
 </script>
 
-<style scoped>
+<style lang="css" scoped>
+
 li {
   display: grid;
   grid-template-columns: max-content 2fr 1fr;
@@ -42,8 +49,23 @@ li {
   flex-wrap: wrap;
   align-items: flex-end;
 
+  letter-spacing: 1px;
+
   grid-column: 1/4;
   grid-row: 1/2;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1px max-content 1px;
+  grid-column-gap: 5px;
+}
+
+.leftSmallPipe,
+.rightSmallPipe {
+  background-color: #ced0cf;
+  height: 100%;
+  width: 100%;
 }
 
 .gfIcon {
@@ -58,6 +80,11 @@ li {
   text-align: center;
   padding-top: 2.5px;
   align-self: baseline;
+}
+
+.title {
+  text-transform: uppercase;
+  margin: 0px 20px;
 }
 
 .slash {
@@ -107,4 +134,5 @@ li {
 .pp {
   grid-column: 3/4;
 }
+
 </style>

@@ -6,11 +6,11 @@
     <WhiteLine class="oneColumn" />
     <Sandwiches class="sandwiches" />
     <WhiteLine class="oneColumn" />
-    <Salads />
-    <WhiteLine class="oneColumn" />
-    <Flatbreads />
+    <Gyros />
     <WhiteLine class="oneColumn" />
     <Soup />
+    <WhiteLine class="oneColumn" />
+    <Salads />
     <WhiteLine class="oneColumn" />
     <Pastas />
     <WhiteLine class="oneColumn" />
@@ -24,8 +24,8 @@ import WhiteLine from '@/components/menuComponents/dividerComponents/WhiteLineCo
 import Breakfast from '@/components/menuComponents/Breakfast.vue'
 import FirstThings from '@/components/menuComponents/FirstThings.vue'
 import Sandwiches from '@/components/menuComponents/Sandwiches.vue'
+import Gyros from '@/components/menuComponents/Gyros.vue'
 import Salads from '@/components/menuComponents/Salads.vue'
-import Flatbreads from '@/components/menuComponents/Flatbreads.vue'
 import Soup from '@/components/menuComponents/Soup.vue'
 import Pastas from '@/components/menuComponents/Pastas.vue'
 import SidePairings from '@/components/menuComponents/SidePairings.vue'
@@ -38,8 +38,8 @@ export default {
     Breakfast,
     FirstThings,
     Sandwiches,
+    Gyros,
     Salads,
-    Flatbreads,
     Soup,
     Pastas,
     SidePairings,
@@ -49,14 +49,13 @@ export default {
 </script>
 
 <style>
+
 .menu {
-  background-color: #07070f;
   color: #ced0cf;
   padding-top: 10px;
   align-self: center;
 
   display: grid;
-  /* grid-template-columns: 1fr; */
   place-items: center;
   width: 100vw;
   max-width: 900px;

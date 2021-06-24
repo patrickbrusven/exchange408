@@ -1,15 +1,18 @@
 <template>
   <div class="appContainer">
+    <picture>
+      <source srcset="@/assets/trainLRG.jpg"
+      media="(min-width: 1024px)">
+      <source srcset="@/assets/trainMED.jpg"
+      media="(min-width: 640px)">
+      <source srcset="@/assets/trainSM.jpg">
+      <img class="trainBackground hidden" src="@/assets/trainMED.jpg" alt="train on railroad tracks"/>
+    </picture>
     <SpecialMessage />
-
-    <!-- <div class="routerView"> -->
       <Navigation />
       <router-view />
-      <!-- <FooterComponent /> -->
-    <!-- </div> -->
     <FooterComponent />
   </div>
-  <!-- <FooterComponent /> -->
 </template>
 
 <script>
@@ -25,23 +28,18 @@ export default {
 
   },
 
-    // watch: {
-      // '$route' () {
-        // if (this.$route.path === '/') {
-          // const routerView = document.querySelector('.routerView');
-          // const appContainer = document.querySelector('.appContainer');
-          // routerView.style.position = "absolute";
-          // appContainer.style.height = "300vh";
-        // }
-        // else {
-          // const routerView = document.querySelector('.routerView');
-          // const appContainer = document.querySelector('.appContainer');
-          // routerView.style.position = "relative";
-          // appContainer.style.height = "auto";
-          // appContainer.style.min-height = "100vh";
-        // }
-      // }
-    // },
+    watch: {
+      '$route' () {
+        if (this.$route.path === '/' || this.$route.path === '/location') {
+          const trainBackground = document.querySelector('.trainBackground');
+          trainBackground.style.display = "none";
+        }
+        else {
+          const trainBackground = document.querySelector('.trainBackground');
+          trainBackground.style.display = "block";
+        }
+      }
+    },
 }
 </script>
 
@@ -59,6 +57,13 @@ export default {
   font-family: 'Kollektif', Helvetica, Tahoma, sans-serif;
   font-weight: 300;
 }
+.thinner {
+  font-weight: 100;
+}
+
+.bolder {
+  font-weight: 600;
+}
 
 body {
   background-color: #f0f0ec;
@@ -75,10 +80,19 @@ body {
   align-items: center;
 }
 
-.routerView {
-  /* position: relative; */
-  /* min-height: 100vh; */
-  /* top: 0; */
+.trainBackground {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  height: 100vh;
+  /* height: 100%; */
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
+  /* opacity: .62; */
+  z-index: -2;
 }
 
 footer {

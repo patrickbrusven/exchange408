@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <categorieComponent categorie="SALADS"
+    <categorieComponent categorie="GREENS"
                       description="" />
     <listComponent v-for="item in salads"
                   :item="item"
@@ -33,7 +33,7 @@ export default {
     this.salads = [
       {
         title: 'Garden',
-        description: 'Romaine, cherry toms, red onion, cucumber, shredded mozzarella | add choice of meat $2 |',
+        description: 'Romaine, cherry tomatoes, red onion, cucumbers, mushrooms, shredded mozzarella | add choice of meat $2 |',
         mealPrice: 8,
         price: '',
         pp: 'Berliner Weisse',
@@ -48,14 +48,14 @@ export default {
         mealPrice: 8,
         price: '',
         pp: 'Lightly Oaked Chardonnay',
-        gf: true,
+        gf: false,
         vegetarian: false,
         chefCrafted: false,
         categorie: 'salads',
       },
       {
-        title: 'Waldorf',
-        description: 'Smoked chicken breast, romaine, halved grapes, sliced apples, celery, bleu cheese crumbles, candied walnuts, raspberry vinaigrette',
+        title: 'THE 1893',
+        description: 'Smoked chicken breast, romaine, grapes, sliced apples, celery, bleu cheese crumbles, house crafted candied walnuts and raspberry vinaigrette',
         mealPrice: 11,
         price: '',
         pp: 'Sauvignon Blanc',

@@ -23,7 +23,7 @@ export default {
 .banner {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 2fr 5px max-content 5px 2fr 1fr;
+  grid-template-columns: 1fr 2fr 3px max-content 3px 2fr 1fr;
   grid-template-rows: min-content 2fr;
   justify-items: center;
   align-items: center;

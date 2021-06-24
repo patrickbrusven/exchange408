@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <categorieComponent categorie="FIRST-THINGS"
+    <categorieComponent categorie="FIRST THINGS"
                       description="" />
     <listComponent v-for="item in firstThings"
                   :item="item"
@@ -43,20 +43,20 @@ export default {
         categorie: 'first things',
       },
       {
-        title: 'Artichoke Dip',
-        description: '(GF upon request) Served with sliced French bread, Ancient Grains flat bread, carrots, celery sticks',
+        title: 'Pesto Artichoke Dip',
+        description: '(GF upon request) Served with sliced rosemary french bread, carrots & celery',
         mealPrice: 8.5,
         price: '',
         pp: '',
-        gf: true,
+        gf: false,
         vegetarian: false,
         chefCrafted: true,
         categorie: 'first things',
       },
       {
-        title: 'Bruschetta',
-        description: '(GF upon request) Served with sliced French bread, Ancient Grains flat bread, carrots, celery sticks',
-        mealPrice: 8.5,
+        title: 'Speckled Eggs',
+        description: 'Hard boiled eggs seasoned to perfection with just a hint of spice',
+        mealPrice: 3,
         price: '',
         pp: '',
         gf: true,
