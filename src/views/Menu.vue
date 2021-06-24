@@ -1,26 +1,26 @@
 <template>
   <div class="menu">
     <Breakfast />
-    <WhiteLine class="oneColumn" />
+    <!-- <WhiteLine class="oneColumn" /> -->
     <FirstThings />
-    <WhiteLine class="oneColumn" />
+    <!-- <WhiteLine class="oneColumn" /> -->
     <Sandwiches class="sandwiches" />
-    <WhiteLine class="oneColumn" />
+    <!-- <WhiteLine class="oneColumn" /> -->
     <Gyros />
-    <WhiteLine class="oneColumn" />
+    <!-- <WhiteLine class="oneColumn" /> -->
     <Soup />
-    <WhiteLine class="oneColumn" />
+    <!-- <WhiteLine class="oneColumn" /> -->
     <Salads />
-    <WhiteLine class="oneColumn" />
+    <!-- <WhiteLine class="oneColumn" /> -->
     <Pastas />
-    <WhiteLine class="oneColumn" />
+    <!-- <WhiteLine class="oneColumn" /> -->
     <SidePairings />
     <img class="darkLogo" src="@/assets/408LogoDarkBG.svg" alt="main logo" width="200" height="100">
   </div>
 </template>
 
 <script>
-import WhiteLine from '@/components/menuComponents/dividerComponents/WhiteLineComponent.vue'
+// import WhiteLine from '@/components/menuComponents/dividerComponents/WhiteLineComponent.vue'
 import Breakfast from '@/components/menuComponents/Breakfast.vue'
 import FirstThings from '@/components/menuComponents/FirstThings.vue'
 import Sandwiches from '@/components/menuComponents/Sandwiches.vue'
@@ -34,7 +34,7 @@ import SidePairings from '@/components/menuComponents/SidePairings.vue'
 export default {
   name: 'Menu',
   components: {
-    WhiteLine,
+    // WhiteLine,
     Breakfast,
     FirstThings,
     Sandwiches,
@@ -51,14 +51,16 @@ export default {
 <style>
 
 .menu {
+  align-self: center;
+
   color: #ced0cf;
   padding-top: 10px;
-  align-self: center;
+  width: 100vw;
+  max-width: 900px;
 
   display: grid;
   place-items: center;
-  width: 100vw;
-  max-width: 900px;
+
 }
 
 .darkLogo {
@@ -68,23 +70,30 @@ export default {
   margin: -20px;
 }
 
-@media screen and (min-width:768px) {
-  .menu {
+@media screen and (min-width:770px) {
+  /* .menu {
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: self-start;
-    justify-items: center;
-  }
-
-  .sandwiches {
-    grid-column: 1/3;
-  }
-
-  .oneColumn {
-    display: none;
+    grid-template-columns: 1fr 1fr;
+    align-items: baseline;
+    grid-gap: 29px;
   }
 
   .darkLogo {
     grid-column: 1/3;
-  }
+    justify-self: center;
+  } */
+
+  /* .sandwiches {
+    grid-column: 1/3;
+  } */
+
+  /* .oneColumn {
+    display: none;
+  } */
+
+  /* .darkLogo {
+    grid-column: 1/3;
+  } */
 }
 </style>

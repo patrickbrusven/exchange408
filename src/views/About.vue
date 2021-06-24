@@ -25,16 +25,17 @@ export default {
 
 <style scoped>
 .about {
+  align-self: center;
   /* background-color: #07070f; */
   color: #ced0cf;
   padding-top: 10px;
-  align-self: center;
-
-  display: grid;
-  /* grid-template-columns: 1fr; */
-  place-items: center;
-  width: 100vw;
+  width: 100%;
   max-width: 900px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 .darkLogo {
@@ -42,5 +43,20 @@ export default {
   height: auto;
   max-width: 640px;
   margin: -20px;
+}
+
+@media (min-width: 770px) {
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    align-items: baseline;
+    grid-gap: 29px;
+  }
+
+  .darkLogo {
+    grid-column: 1/3;
+    justify-self: center;
+  }
 }
 </style>
