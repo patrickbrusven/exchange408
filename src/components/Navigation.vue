@@ -3,7 +3,7 @@
     <nav class="mainNav">
       <div @click='onClickLogo' class="logoNav">
         <router-link to="/">
-          <h1>EXCHANGE</h1>
+          <h1>THE EXCHANGE TAVERNS</h1>
         </router-link>
       </div>
       <ul @click='onClickLogo' class="navLinks mediumText">
@@ -93,7 +93,8 @@ export default {
 }
 
 h1 {
-  font-size: 26px;
+  font-size: 17px;
+  letter-spacing: 2px;
 }
 
 .navLinks {
@@ -161,7 +162,13 @@ h1 {
  nav media queries
 ==================================== */
 
-@media screen and (min-width:768px){
+@media screen and (min-width: 500px) {
+  h1 {
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width:768px) {
 
   .navLinks {
     position: relative;
@@ -182,6 +189,8 @@ h1 {
   .navBurger {
     display: none;
   }
+
+
 }
 
 @media screen and (min-width:900px){
