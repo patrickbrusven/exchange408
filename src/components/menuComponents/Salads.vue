@@ -33,7 +33,7 @@ export default {
     this.salads = [
       {
         title: 'Garden',
-        description: 'Romaine, cherry tomatoes, red onion, cucumbers, mushrooms, shredded mozzarella | add choice of meat $2 |',
+        description: 'Romaine, cherry tomatoes, red onion, cucumbers, mushrooms, shredded mozzarella |add a choice of meat for $3.50, steak $4.50| |add egg $1.50|',
         mealPrice: 8,
         price: '',
         pp: 'Berliner Weisse',
@@ -44,7 +44,7 @@ export default {
       },
       {
         title: 'Caesar',
-        description: '(GF upon request) Romaine, shredded parmesan, croutons, Caesar dressing | add choice of meat $2 |',
+        description: '(GF upon request) Romaine, shredded parmesan, croutons, Caesar dressing |add a choice of meat for $3.50, steak $4.50| |add egg $1.50|',
         mealPrice: 8,
         price: '',
         pp: 'Lightly Oaked Chardonnay',

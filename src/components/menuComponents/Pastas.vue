@@ -33,7 +33,7 @@ export default {
       {
         title: 'Grown-A$$ Mac & Cheese',
         description: 'Baked penne, creamy cheddar, parmesan, smoked bacon, jalapenos, onions, mushrooms',
-        mealPrice: 8,
+        mealPrice: 10,
         price: '',
         pp: 'Bordeaux',
         gf: false,
@@ -44,7 +44,7 @@ export default {
       {
         title: 'Basic(ally) Mac & Cheese',
         description: 'Baked penne and creamy cheddar',
-        mealPrice: 6,
+        mealPrice: 7,
         price: '',
         pp: 'English Brown Ale',
         gf: false,

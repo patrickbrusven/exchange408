@@ -77,8 +77,8 @@ export default {
       {
         title: 'Urban Steak',
         description: 'Charcoal-grilled hickory smoked ribeye or t-bone steak, cherry pepper aioli, shredded romaine and sliced romas on rosemary and olive oil french bread',
-        mealPrice: 11,
-        price: 8,
+        mealPrice: 12,
+        price: 9,
         pp: 'Whiskey',
         gf: false,
         vegetarian: false,
@@ -88,8 +88,8 @@ export default {
       {
         title: 'The 408 BLT',
         description: 'Smoked pork belly (think thick cut bacon), cherry pepper aioli, shredded romaine and sliced romas on rosemary and olive oil french bread',
-        mealPrice: 10,
-        price: 7,
+        mealPrice: 11,
+        price: 8,
         pp: 'Whiskey',
         gf: false,
         vegetarian: false,

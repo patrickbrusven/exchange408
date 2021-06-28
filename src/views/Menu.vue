@@ -15,6 +15,7 @@
     <Pastas />
     <!-- <WhiteLine class="oneColumn" /> -->
     <SidePairings />
+    <MeatsComponent />
     <img class="darkLogo" src="@/assets/408LogoDarkBG.svg" alt="main logo" width="200" height="100">
   </div>
 </template>
@@ -29,6 +30,7 @@ import Salads from '@/components/menuComponents/Salads.vue'
 import Soup from '@/components/menuComponents/Soup.vue'
 import Pastas from '@/components/menuComponents/Pastas.vue'
 import SidePairings from '@/components/menuComponents/SidePairings.vue'
+import MeatsComponent from '@/components/menuComponents/meatsComponent.vue'
 // import Beverages from '@/components/menuComponents/Beverages.vue'
 
 export default {
@@ -43,6 +45,7 @@ export default {
     Soup,
     Pastas,
     SidePairings,
+    MeatsComponent,
     // Beverages,
   }
 }

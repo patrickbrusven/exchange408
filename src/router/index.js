@@ -45,7 +45,7 @@ const router = createRouter({
   scrollBehavior (to, from, savedPosition) {
     if (to.hash) {
       return {el: to.hash,
-              top: 60,}
+              top: 53,}
     } else if (savedPosition) {
       return savedPosition
     } else {
